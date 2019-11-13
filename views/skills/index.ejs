@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev Skills</title>
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+    </header>
+    <h1>List of Skills</h1>
+    <ul>
+        <% skills.forEach(function(skill, idx) { %>
+        <li>
+            <a href ="/skills/<%= idx %>"><%= skill.skill %></a>
+            - 
+            <%= skill.exp ? 'Yes!' : 'Not Yet!' %>
+        </li>
+        <% }); %>
+    </ul>  
+    
+</body>
+</html>
