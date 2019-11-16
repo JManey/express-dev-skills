@@ -6,6 +6,7 @@ module.exports = {
     new: newSkill,
     create,
     edit,
+    update,
 };
 
 function index(req, res) {
@@ -34,4 +35,9 @@ function edit(req, res) {
         skill,
         idx: req.params.id,
     });
+};
+function update(req, res) {
+    // req.body.exp = !!req.body.done;
+    Skill.update(req.params.id, req.body);
+    res.redirect(`/skills/${req.params.id}`);
 };

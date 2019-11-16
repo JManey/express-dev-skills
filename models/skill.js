@@ -21,9 +21,13 @@ function getOne(id) {
 function create(skill) {
     skills.push(skill);
 }
+function update(id, skill) {
+    skills.splice(id, 1, skill);
+}
 
 module.exports = {
     getAll,
     getOne,
     create,
+    update,
 }
