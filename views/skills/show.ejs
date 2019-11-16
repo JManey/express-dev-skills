@@ -17,7 +17,13 @@
     <h3><%= skill.skill %></h3>
     <h3>Aquired: <%= skill.exp ? 'Yes' : 'No' %></h3>  
 
-    <a href="/skills/<%= parseInt(skillNum)-1 %>/edit">Edit Skill</a>
+    <button>
+        <a href="/skills/<%= parseInt(skillNum)-1 %>/edit">Edit Skill</a>
+    </button>
+
+
+    <form action="/skills/<%= parseInt(skillNum)-1 %>?_method=DELETE" method="POST" class="delete-form">
+        <button type="submit">Remove Skill</button>
     
 </body>
 </html>
