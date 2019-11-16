@@ -8,9 +8,10 @@
     <title>Dev Skills</title>
 </head>
 <body>
-    <header>
+    <nav>
         <a href="/">Home</a>
-    </header>
+    </nav>
+   
     <h1>List of Skills</h1>
     <ul>
         <% skills.forEach(function(skill, idx) { %>
@@ -22,5 +23,9 @@
         <% }); %>
     </ul>  
     
+    <button>
+        <a href="/skills/new">Add New Skill</a>
+    </button>
+
 </body>
 </html>

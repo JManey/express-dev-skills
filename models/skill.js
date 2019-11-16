@@ -1,7 +1,4 @@
-module.exports = {
-    getAll,
-    getOne,
-}
+
 
 const skills = [
     {skill: 'JavaScript', exp: true},
@@ -20,4 +17,13 @@ function getAll() {
 }
 function getOne(id) {
     return skills[id];
+}
+function create(skill) {
+    skills.push(skill);
+}
+
+module.exports = {
+    getAll,
+    getOne,
+    create,
 }
