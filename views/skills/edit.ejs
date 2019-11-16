@@ -16,7 +16,7 @@
     <h1>Edit Skill</h1>
     <form action="/skills/<%= idx %>?_method=PUT" method="POST" autocomplete="off">
         <label>
-            <input type="checkbox" name="exp" <%= todo.exp ? 'checked' : ''  %>>
+            <input type="checkbox" name="exp" <%= skill.exp ? 'checked' : ''  %>>
         </label>
         <input type="text" name="skill" value="<%= skill.skill %>">
         <button type ="submit">Update Skill</button>
